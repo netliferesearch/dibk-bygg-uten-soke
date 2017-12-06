@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "title": "Bygg uten å søke?"
+  },
+  "schema": [
+    {
+      "id": "page1",
+      "type": "Page",
+      "heading": "Bygg uten å søke?",
+      "children": [
+        {
+          "id": "question",
+          "property": "question",
+          "type": "Input",
+          "heading": "Bygg uten å søke?"
+        }
+      ]
+    }
+  ]
+}
