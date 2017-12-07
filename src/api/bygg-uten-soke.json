@@ -9,10 +9,525 @@
       "heading": "Bygg uten å søke?",
       "children": [
         {
-          "id": "question",
-          "property": "question",
-          "type": "Input",
-          "heading": "Bygg uten å søke?"
+          "id": "bebygd",
+          "property": "bebygd",
+          "type": "Radio",
+          "heading": "Er eiendommen bebygd?",
+          "text":
+            "<img src=\"/img/05_garasje_600x275.png\" alt=\"Illustrasjon av et hus\">For å slippe å søke må eiendommen din være bebygd. Eiendommen din er bebygd hvis det for eksempel er et bolighus eller hytte på eiendommen fra før.",
+          "options": [
+            {
+              "id": "bebygd.yes",
+              "type": "Answer",
+              "heading": "Ja, eiendommen er bebygd",
+              "value": "yes"
+            },
+            {
+              "id": "bebygd.no",
+              "type": "Answer",
+              "heading": "Nei, eiendommen er ikke bebygd",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page2",
+      "type": "Page",
+      "heading": "Skal bygningen være større enn 50 kvadratmeter?",
+      "children": [
+        {
+          "id": "bigger50",
+          "property": "bigger50",
+          "type": "Radio",
+          "heading": "Skal bygningen være større enn 50 kvadratmeter?",
+          "text":
+            "<img src=\"/img/06_garasje_600x275.png\" alt=\"Illustrasjon av et hus med tallet 50 kvm\">Du må sende byggesøknad til kommunen hvis bygningen skal være større enn 50 kvadratmeter. Verken samlet bruksareal (BRA) eller bebygd areal (BYA) kan være større enn 50 kvadratmeter.",
+          "options": [
+            {
+              "id": "bigger50.yes",
+              "type": "Answer",
+              "heading": "Ja, bygningen blir større enn 50 kvm",
+              "value": "yes"
+            },
+            {
+              "id": "bigger50.no",
+              "type": "Answer",
+              "heading": "Nei, bygningen blir ikke større enn 50 kvm",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page3",
+      "type": "Page",
+      "heading": "Skal bygningen plasseres minst 1,0 meter fra andre bygninger på eiendommen din?",
+      "children": [
+        {
+          "id": "distanceToOtherBuildings",
+          "property": "distanceToOtherBuildings",
+          "type": "Radio",
+          "heading":
+            "Skal bygningen plasseres minst 1,0 meter fra andre bygninger på eiendommen din?",
+          "text":
+            "<img src=\"/img/07_garasje_600x275.png\" alt=\"Illustrasjon av et hus med tallet 50 kvm\">Bygningen må plasseres minst 1,0 meter fra andre bygninger på eiendommen din.",
+          "options": [
+            {
+              "id": "distanceToOtherBuildings.yes",
+              "type": "Answer",
+              "heading": "Ja, det blir minst 1,0 meter til andre bygninger på eiendommen min",
+              "value": "yes"
+            },
+            {
+              "id": "distanceToOtherBuildings.no",
+              "type": "Answer",
+              "heading": "Nei, det blir mindre enn 1,0 meter til andre bygninger",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page4",
+      "type": "Page",
+      "heading": "Skal bygningen plasseres minst 1,0 meter fra nabogrensa?",
+      "children": [
+        {
+          "id": "distanceToNabogrensa",
+          "property": "distanceToNabogrensa",
+          "type": "Radio",
+          "heading": "Skal bygningen plasseres minst 1,0 meter fra nabogrensa?",
+          "text":
+            "<img src=\"/img/08_garasje_600x275.png\" alt=\"Illustrasjon av et hus med 1 meter til nabogrensen\">Bygningen må plasseres minst 1,0 meter fra nabogrensa. Dette betyr at veggen som vender mot naboen, må plasseres minst 1,0 meter fra grensa. Ta kontakt med kommunen om du er usikker på hvor nabogrensa går.",
+          "options": [
+            {
+              "id": "distanceToNabogrensa.yes",
+              "type": "Answer",
+              "heading": "Ja, bygningen skal plasseres minst 1,0 meter fra nabogrensa",
+              "value": "yes"
+            },
+            {
+              "id": "distanceToNabogrensa.no",
+              "type": "Answer",
+              "heading": "Nei, bygningen skal plasseres nærmere enn 1,0 meter fra nabogrensa",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page5",
+      "type": "Page",
+      "heading": "Er det mindre enn 2,0 meter til bygning på naboeiendom?",
+      "children": [
+        {
+          "id": "distanceToBygningOnNaboen",
+          "property": "distanceToBygningOnNaboen",
+          "type": "Radio",
+          "heading": "Er det mindre enn 2,0 meter til bygning på naboeiendom?",
+          "text":
+            "<img src=\"/img/09_garasje_600x275.png\" alt=\"Illustrasjon av et hus med 2 meter til byning på naboeiendomen\">Hvis det er mindre enn 2,0 meter mellom bygningen din og nærmeste bygning på naboeiendommen, er det strengere brannkrav. Da må du brannsikre de delene av bygningen som er nærmere naboen enn 2,0 meter. Dette kan gjelde både tak og vegger.",
+          "options": [
+            {
+              "id": "distanceToBygningOnNaboen.yes",
+              "type": "Answer",
+              "heading": "Ja, det er mindre enn 2,0 meter til bygning på naboeiendom",
+              "value": "yes"
+            },
+            {
+              "id": "distanceToBygningOnNaboen.no",
+              "type": "Answer",
+              "heading": "Nei, det er minst 2,0 meter til bygning på naboeiendom",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page6",
+      "type": "Page",
+      "heading": "Skal noen bo eller sove i bygningen?",
+      "children": [
+        {
+          "id": "sleepOrLiveIn",
+          "property": "sleepOrLiveIn",
+          "type": "Radio",
+          "heading": "Skal noen bo eller sove i bygningen?",
+          "text":
+            "<img src=\"/img/13A_garasje_600x275.png\" alt=\"Illustrasjon garasje har grønnt merke og dusj og seng har rødt merke\">Du må søke hvis du skal ha kjøkken, stue, bad, våtrom eller soverom i bygningen. Du kan ikke bo eller sove i bygningen.",
+          "options": [
+            {
+              "id": "sleepOrLiveIn.yes",
+              "type": "Answer",
+              "heading": "Ja, noen skal bo eller sove i bygningen",
+              "value": "yes"
+            },
+            {
+              "id": "sleepOrLiveIn.no",
+              "type": "Answer",
+              "heading": "Nei, ingen skal bo eller sove i bygningen",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page7",
+      "type": "Page",
+      "heading": "Skal du ha kjeller eller loftsetasje i bygningen?",
+      "children": [
+        {
+          "id": "oneFloor",
+          "property": "oneFloor",
+          "type": "Radio",
+          "heading": "Skal noen bo eller sove i bygningen?",
+          "text":
+            "<img src=\"/img/12_garasje_600x275.png\" alt=\"Illustrasjon av hus med en etasje\"><p>Du har kun lov å bygge én etasje. Du må søke hvis du vil ha kjeller eller loftsetasje.</p><p>Du kan likevel ha et lite oppbevaringsareal eller kryploft over garasjen uten at du trenger å søke.</p>",
+          "options": [
+            {
+              "id": "oneFloor.yes",
+              "type": "Answer",
+              "heading": "Ja, jeg skal ha kjeller eller en loftsetasje i bygningen",
+              "value": "yes"
+            },
+            {
+              "id": "oneFloor.no",
+              "type": "Answer",
+              "heading": "Nei, jeg skal ikke ha kjeller eller loftsetasje i bygningen",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page8",
+      "type": "Page",
+      "heading": "Er mønehøyde maksimalt 4,0 meter og gesimshøyde maksimalt 3,0 meter?",
+      "children": [
+        {
+          "id": "hightLevels",
+          "property": "hightLevels",
+          "type": "Radio",
+          "heading": "Skal noen bo eller sove i bygningen?",
+          "text":
+            "<img src=\"/img/14A_garasje_600x275.png\" alt=\"Illustrasjon av mønehøyde\"><img src=\"/img/14B_garasje_600x275.png\" alt=\"Illustrasjon av gesimshøyde\"><p>Mønehøyde kan maksimalt være 4,0 meter og gesimshøyde maksimalt 3,0 meter. Høydene måles vanligvis i forhold til gjennomsnittsnivået av det ferdig planerte terrenget rundt bygningen.</p><strong>Hva er gesimshøyde?</strong><p>Gesimshøyde er høyde til skjæringspunktet mellom ytterklednings ytre flate og taktekkingens ytre flate, oppå taket. Gesimshøyde måles fra dette punktet og til terrengets utregnete gjennomsnittsnivå rundt bygget.</p><strong>Hva er mønehøyde?</strong><p>Mønehøyde er vanligvis høyden mellom to skrå flater, som ofte vil være takets høyeste punkt. Mønehøyde måles fra dette punktet og til terrengets utregnete gjennomsnittsnivå rundt bygget.</p><strong>Er du usikker på hvordan å måle høyden på bygningen?</strong><p>Finn mer informasjon i kapittel 4 i <a href=\"LINK TIL PDF\">Grad av utnytting - beregnings- og måleregler (PDF)</a></p>",
+          "options": [
+            {
+              "id": "hightLevels.yes",
+              "type": "Answer",
+              "heading":
+                "Ja, mønehøyden er maksimalt 4,0 meter og gesimshøyden er maksimalt 3,0 meter",
+              "value": "yes"
+            },
+            {
+              "id": "hightLevels.no",
+              "type": "Answer",
+              "heading": "Nei, bygningen blir høyere enn dette",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page9",
+      "type": "Page",
+      "heading": "Skal bygningen plasseres over vann- og avløpsledninger?",
+      "children": [
+        {
+          "id": "pipesUnder",
+          "property": "pipesUnder",
+          "type": "Radio",
+          "heading": "Skal bygningen plasseres over vann- og avløpsledninger?",
+          "text":
+            "<img src=\"/img/16_garasje_600x275.png\" alt=\"Illustrasjon av hus rør under\"><p>Du kan ikke plassere bygningen over vann- og avløpsledninger. Kommunen må ha tilgang til disse ledningene for vedlikehold og reparasjon.</p><p>Du må derfor passe på:</p><ul><li>at du bruker et oppdatert kart hvor alle ledninger vises</li><li>å sjekke om det finnes lokale regler som fastsetter hvor langt unna ledninger det er lov å bygge</li><p>Ta kontakt med kommunen om du er usikker på hvor ledningene er.</p>",
+          "options": [
+            {
+              "id": "pipesUnder.yes",
+              "type": "Answer",
+              "heading": "Ja, bygningen skal plasseres over vann- og avløpsledninger",
+              "value": "yes"
+            },
+            {
+              "id": "pipesUnder.no",
+              "type": "Answer",
+              "heading": "Nei, bygningen skal ikke plasseres over vann- og avløpsledninger",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page10",
+      "type": "Page",
+      "heading": "Skal du bygge i et LNF-område?",
+      "children": [
+        {
+          "id": "lnf",
+          "property": "lnf",
+          "type": "Radio",
+          "heading": "Skal du bygge i et LNF-område?",
+          "text":
+            "<img src=\"/img/17_garasje_600x275.png\" alt=\"Tre sauer og et lam\"><p>Det er begrensninger på hva du kan bygge i områder som er regulerte til landbruk, natur og friluftsformål samt reindrift. Dette kalles LNF-områder eller LNFR-områder. Du finner som regel informasjon om dette i kommuneplanens arealdel.</p>",
+          "options": [
+            {
+              "id": "lnf.yes",
+              "type": "Answer",
+              "heading": "Ja, jeg skal bygge i et LNF-område",
+              "value": "yes"
+            },
+            {
+              "id": "lnf.no",
+              "type": "Answer",
+              "heading": "Nei, jeg skal ikke bygge i et LNF-område",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page11",
+      "type": "Page",
+      "heading": "Skal du bygge nærmere enn 100 meter fra sjøen?",
+      "children": [
+        {
+          "id": "seaplacement",
+          "property": "seaplacement",
+          "type": "Radio",
+          "heading": "Skal du bygge nærmere enn 100 meter fra sjøen?",
+          "text":
+            "<img src=\"/img/19_garasje_600x275.png\" alt=\"Hus nært sjøen\"><p>Det er i utgangspunktet forbudt å bygge nærmere enn 100 meter fra sjøen. Dette området kalles 100-metersbeltet. Avstanden måles fra alminnelig høyvannsstand.</p><p>Det kan også være begrensninger på hva du kan bygge nærmere enn 100 meter fra elver og innsjøer (vassdrag).</p><p>Svaret finner du i reguleringsplan eller i kommuneplanens arealdel.</p>",
+          "options": [
+            {
+              "id": "seaplacement.yes",
+              "type": "Answer",
+              "heading": "Ja, jeg skal bygge nærmere sjøen",
+              "value": "yes"
+            },
+            {
+              "id": "seaplacement.no",
+              "type": "Answer",
+              "heading": "Nei, jeg skal bygge minst 100 meter fra sjøen",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page11",
+      "type": "Page",
+      "heading": "Skal du bygge nærmere enn 100 meter fra sjøen?",
+      "children": [
+        {
+          "id": "seaplacement",
+          "property": "seaplacement",
+          "type": "Radio",
+          "heading": "Skal du bygge nærmere enn 100 meter fra sjøen?",
+          "text":
+            "<img src=\"/img/19_garasje_600x275.png\" alt=\"Hus nært sjøen\"><p>Det er i utgangspunktet forbudt å bygge nærmere enn 100 meter fra sjøen. Dette området kalles 100-metersbeltet. Avstanden måles fra alminnelig høyvannsstand.</p><p>Det kan også være begrensninger på hva du kan bygge nærmere enn 100 meter fra elver og innsjøer (vassdrag).</p><p>Svaret finner du i reguleringsplan eller i kommuneplanens arealdel.</p>",
+          "options": [
+            {
+              "id": "seaplacement.yes",
+              "type": "Answer",
+              "heading": "Ja, jeg skal bygge nærmere sjøen",
+              "value": "yes"
+            },
+            {
+              "id": "seaplacement.no",
+              "type": "Answer",
+              "heading": "Nei, jeg skal bygge minst 100 meter fra sjøen",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page12",
+      "type": "Page",
+      "heading": "Skal du bygge i et flom- eller skredutsatt område?",
+      "children": [
+        {
+          "id": "dangerousarea",
+          "property": "dangerousarea",
+          "type": "Radio",
+          "heading": "Skal du bygge i et flom- eller skredutsatt område?",
+          "text":
+            "<img src=\"/img/25_garasje_600x275.png\" alt=\"Hus nært skred\"><p>Det er ditt ansvar å sørge for at bygningen plasseres på sikker grunn. Du må derfor undersøke om det er fare for ras, flom, stormflo og skred, inklusive kvikkleireskred, der du skal bygge. Et kvikkleireskred kan bli utløst selv av små terrenginngrep.</p><p>Er du i tvil om grunnen er sikker, må du kontakte kommunen. Du kan lese mer om hvilke krav som stilles til sikkerhet mot naturpåkjenninger i <a href=\"https://dibk.no/byggeregler/tek/2/7/innledning/\">byggteknisk forskrift kapittel 7</a>.</p>",
+          "options": [
+            {
+              "id": "dangerousarea.yes",
+              "type": "Answer",
+              "heading":
+                "Ja, jeg skal bygge i et område som er flom- eller rasutsatt, eller hvor grunnen ikke er sikker",
+              "value": "yes"
+            },
+            {
+              "id": "dangerousarea.no",
+              "type": "Answer",
+              "heading":
+                "Nei, jeg skal ikke bygge i et flom- eller rasutsatt område eller område med usikker grunn",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page13",
+      "type": "Page",
+      "heading": "Er det minst 30 meter til nærmeste jernbanespor?",
+      "children": [
+        {
+          "id": "closeToRailroad",
+          "property": "closeToRailroad",
+          "type": "Radio",
+          "heading": "Er det minst 30 meter til nærmeste jernbanespor?",
+          "text":
+            "<img src=\"/img/26_garasje_600x275.png\" alt=\"Hus nært jernbane\"><p>Det må være minst 30 meter til nærmeste jernbanespor. Dette gjelder både togspor, t-banespor og trikkespor. Avstanden måles fra nærmeste spors midtlinje.</p>",
+          "options": [
+            {
+              "id": "closeToRailroad.yes",
+              "type": "Answer",
+              "heading": "Ja, det er minst 30 meter til nærmeste jernbanespor",
+              "value": "yes"
+            },
+            {
+              "id": "closeToRailroad.no",
+              "type": "Answer",
+              "heading": "Nei, det er under 30 meter til nærmeste jernbanespor",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page14",
+      "type": "Page",
+      "heading": "Skal du bygge i nærheten av offentlig vei?",
+      "children": [
+        {
+          "id": "closeToRoad",
+          "property": "closeToRoad",
+          "type": "Radio",
+          "heading": "Er det minst 30 meter til nærmeste jernbanespor?",
+          "text":
+            "<img src=\"/img/40_garasje_600x275.png\" alt=\"Hus nært offentlig vei\"><p>Du bygger i nærheten av offentlig vei hvis det er mindre enn:</p><ul><li>15 meter til gang- og sykkelvei</li><li>15 meter til kommunal vei</li><li>50 meter til fylkesvei</li><li>100 meter til riksvei  (50 meter hvis området er uregulert)</li></ul><p>Avstanden måles fra midtlinjen i kjørebanen.</p>",
+          "options": [
+            {
+              "id": "closeToRoad.yes",
+              "type": "Answer",
+              "heading": "Ja, jeg skal bygge i nærheten av offentlig vei",
+              "value": "yes"
+            },
+            {
+              "id": "closeToRoad.no",
+              "type": "Answer",
+              "heading": "Nei, jeg skal bygge lengre unna offentlig vei enn dette",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page15",
+      "type": "Page",
+      "heading": "Trenger du ny eller endret avkjørsel mot vei?",
+      "children": [
+        {
+          "id": "newRoad",
+          "property": "newRoad",
+          "type": "Radio",
+          "heading": "Trenger du ny eller endret avkjørsel mot vei?",
+          "text":
+            "<img src=\"/img/41_garasje_600x275.png\" alt=\"Hus nært offentlig vei\"><p>Du må ha godkjent avkjørsel mot vei for å kunne bygge garasje. Trenger du ny eller endret avkjørsel mot kommunal vei, kontakter du kommunen. Trenger du ny eller endret avkjørsel mot riks- eller fylkesvei kontakter du <a href=\"http://www.vegvesen.no/Fag/Veg+og+gate/Prosjektering+og+bygging/bygge+langs+veg\">Statens vegvesen</a>. Du kan trenge ny eller endret avkjørsel hvis garasjen gir dårligere sikt enn det du har i dag.</p>",
+          "options": [
+            {
+              "id": "newRoad.yes",
+              "type": "Answer",
+              "heading": "Ja, jeg trenger ny eller endret avkjørsel mot vei",
+              "value": "yes"
+            },
+            {
+              "id": "newRoad.no",
+              "type": "Answer",
+              "heading": "Nei, jeg trenger ikke ny eller endret avkjørsel mot vei",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page16",
+      "type": "Page",
+      "heading": "Trenger du ny eller endret avkjørsel mot vei?",
+      "children": [
+        {
+          "id": "bigArea",
+          "property": "bigArea",
+          "type": "Radio",
+          "heading": "Har eiendommen din stort nok areal til bygningen du ønsker å sette opp?",
+          "text":
+            "<img src=\"/img/42_garasje_600x275.png\" alt=\"Et stort og en liten eiendom med symboler om at det ikke er plass til det store\"><p>Eiendommen din har en begrensning på hvor mye areal eller volum du kan ha bygninger på. Dette er som regel oppgitt i situasjonskart eller reguleringsplan som:</p><ul><li>BYA: Bebygd areal. Se etter prosent BYA eller antall kvadratmeter BYA</li><li>BRA: Bruksareal. Se etter prosent BRA eller antall kvadratmeter BRA</li><li>TU: Tomteutnyttelse. Se etter prosent TU. Finnes kun på eldre planer</li></ul><p>For å finne ut hvor mye plass du har til den ny bygningen, må du regne ut hvor mye plass de eksisterende bygningene opptar. Når du har gjort det, vil du kunne regne ut om du har plass nok til den nye bygningen, eller om du må bygge mindre enn planlagt.</p><p>Kontakt kommunen hvis du er usikker på hvor mye areal du har lov til å bygge på, og hva slags utregningsmåte du skal bruke.</p><p>Du kan finne mer informasjon om utregningsmåter i <a href=\"https://www.regjeringen.no/globalassets/upload/kmd/boby/grad_av_utnytting.pdf\">Grad av utnytting - beregnings- og måleregler (PDF)</a>.</p>",
+          "options": [
+            {
+              "id": "bigArea.yes",
+              "type": "Answer",
+              "heading":
+                "Ja, eiendommen min har stort nok areal til bygningen jeg ønsker å sette opp",
+              "value": "yes"
+            },
+            {
+              "id": "bigArea.no",
+              "type": "Answer",
+              "heading":
+                "Nei, eiendommen min har ikke stort nok areal til bygningen jeg ønsker å sette opp",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page17",
+      "type": "Page",
+      "heading": "Er det andre forhold som hindrer deg i å bygge der du ønsker?",
+      "children": [
+        {
+          "id": "other",
+          "property": "other",
+          "type": "Radio",
+          "heading": "Er det andre forhold som hindrer deg i å bygge der du ønsker?",
+          "text":
+            "<img src=\"/img/43_garasje_600x275.png\" alt=\"To eiendomer og en har et kryss på seg\"><p>Det kan være andre forhold som hindrer deg i å bygge slik du ønsker. Dette vil du finne informasjon om i reguleringsplan, kommuneplanens arealdel, andre plandokumenter eller situasjonskart.</p><p>Eksempler på begrensninger du kan finne der er:</p><ul><li>strengere krav til hvor høy eller stor bygningen din kan være</li><li>strengere krav til hvor langt unna nabogrensa du kan bygge</li><li>krav til bygningens utseende, for eksempel fargevalg, takvinkel, plassering og materialvalg </li><li>verneverdige kulturminner som begrenser hvor eller hva du kan bygge</li><li>sjeldne dyre- eller plantearter som begrenser hvor eller hva du kan bygge</li></ul><p>Les derfor grundig gjennom reguleringsplan, kommuneplanens arealdel, situasjonskartet og andre dokumenter om eiendommen.</p>",
+          "options": [
+            {
+              "id": "other.yes",
+              "type": "Answer",
+              "heading": "Ja, det finnes andre begrensninger",
+              "value": "yes"
+            },
+            {
+              "id": "other.no",
+              "type": "Answer",
+              "heading": "Nei, det finnes ikke andre begrensninger",
+              "value": "no"
+            }
+          ]
         }
       ]
     }
